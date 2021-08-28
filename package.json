@@ -47,6 +47,12 @@
     "build",
     "status"
   ],
+  "postinstall": [
+    "lint:fix",
+    "coverage",
+    "build",
+    "status"
+  ],
   "nyc": {
     "extension": [
       ".ts"
