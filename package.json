@@ -22,7 +22,8 @@
     "build": "npm run tsc:build && npm run rollup:build && npm run tsdoc",
     "pack": "npm run build && npm pack",
     "status": "git status",
-    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
+    "postinstall": "npm run tsc:build && npm run rollup:build && npm run tsdoc"
   },
   "repository": {
     "type": "git",
